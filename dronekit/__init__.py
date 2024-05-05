@@ -35,11 +35,7 @@ A number of other useful classes and methods are listed below.
 import sys
 import collections
 
-# Python3.10 removed MutableMapping from collections:
-if sys.version_info.major == 3 and sys.version_info.minor >= 10:
-    from collections.abc import MutableMapping
-else:
-    from collections import MutableMapping
+from collections import MutableMapping
 
 import copy
 import logging
